@@ -1,1 +1,2 @@
-# car_segmentation_project
+# 자동차 외관 손상 인식 자동화
+
