@@ -30,7 +30,11 @@ U-Net은 'U-Net: Convolutional Networks for Biomedical Image Segmentation' 이�
 또한 차량의 스크래치와 비슷한 MRI 이미지 분석에도 사용 되는 것을 보고 Unet 모델을 선택했습니다.
 
 ## 4. 손실 함수, Dice Loss
+<img src="https://user-images.githubusercontent.com/97801319/211905105-3e51c7ba-74e8-4c96-a981-c5de9fc284a4.png" width="500">
 
+**적용 이유**
+
+- 분할 이미지에서 각각의 클래스 양이 불균형하면 적게 분포하는 클래스는 예측하지 않는 방향으로 학습이 진행되게 됩니다. Dice Loss를 사용하면 이 같은 문제를 해결할 수 있습니다.
 
 ## 5. 데이터 이미지 증강
 기본적으로 부족한 데이터 양을 보완하기 위해 이미지 증강을 해주었습니다. 
@@ -39,5 +43,23 @@ U-Net은 'U-Net: Convolutional Networks for Biomedical Image Segmentation' 이�
 
 ## 6. 결과
 
+**Dice Score : 0.341**
+
+<img src="https://user-images.githubusercontent.com/97801319/211906095-fd1c243e-6202-481c-bdf8-8c3485e7ccd7.png" width="500">
+<img src="https://user-images.githubusercontent.com/97801319/211909331-071661f4-9863-4ac4-a525-2a5b2a84f7bc.png" width="500">
+
+## 7. 한계점 및 해결방안
+
+ 결과로 Score가 그리 높게 나오지 않았는데 가장 큰 이유는 데이터 양의 부족입니다. 
+ 
+ 첫 번째로, 위 그래프를 보면 과적합이 된것을 알 수 있습니다. 과적합에는 여러 이유가 있지만
+ 
+ 해결방안 Unet 모델을 직접설계, Dropout layer 추가
+ 
+ 데이터 추가
+ 
+ 두 번째로, 낮은 Score 입니다. 
+ <img src="https://user-images.githubusercontent.com/97801319/211910810-5210775d-596a-4592-97b5-258ba3e36d10.png" width="500">
+ 위 그림처럼 반짝이거나 빛이 반사 되면 스크래치로 인식하는 경우가 있습니다. 
 
 
