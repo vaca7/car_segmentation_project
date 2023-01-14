@@ -58,7 +58,9 @@ U-Net은 'U-Net: Convolutional Networks for Biomedical Image Segmentation' 이�
  해결방안으로는 Unet 모델을 직접설계 하는 것입니다. Dropout layer 추가하여 과적합을 방지할 수 있을것입니다.
  
  두 번째로, 낮은 반사된 빛이 스크래치로 인식되는 경우입니다.
+ 
  <img src="https://user-images.githubusercontent.com/97801319/211910810-5210775d-596a-4592-97b5-258ba3e36d10.png" width="500">
+ 
  위 그림처럼 반짝이거나 빛이 반사 되면 스크래치로 인식하는 경우가 있습니다. 
  해결방안으로는 homomorphic filter를 사용하는 것입니다. 이 필터는 이미지에서 조명을 제거해주는 역할을 하여 부족한 부분을 보완할 수 있을 것입니다.
 
