@@ -43,10 +43,12 @@ U-Net은 'U-Net: Convolutional Networks for Biomedical Image Segmentation' 이�
 
 ## 6. 결과
 
-**Dice Score : 0.341**
+epoch= 70, batch_size = 10 시행 결과
 
-<img src="https://user-images.githubusercontent.com/97801319/211906095-fd1c243e-6202-481c-bdf8-8c3485e7ccd7.png" width="500">
-<img src="https://user-images.githubusercontent.com/97801319/211909331-071661f4-9863-4ac4-a525-2a5b2a84f7bc.png" width="500">
+**Dice Score : 0.41**
+
+<img src="https://user-images.githubusercontent.com/97801319/212558545-fb19df3c-6fb3-4c49-9246-6a69b4a30920.png" width="500">
+<img src="https://user-images.githubusercontent.com/97801319/212558566-7711cae7-f9cb-4092-9d93-91656329c11b.png" width="500">
 
 ## 7. 한계점 및 해결방안
 
