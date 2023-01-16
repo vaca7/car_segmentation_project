@@ -25,7 +25,7 @@
 
 **-Unet 선택 이유**
 
-U-Net은 'U-Net: Convolutional Networks for Biomedical Image Segmentation' 이라는 논문에서 제안한 구조로서 매우 적은 수의 학습 데이터로도 정확한 이미지 세그멘테이션 성능을 보여주어 주어진 데이터가 적은 저에게 적합하다고 판단했습니다.
+U-Net은 'U-Net: Convolutional Networks for Biomedical Image Segmentation' 이라는 논문에서 제안한 구조로써 매우 적은 수의 학습 데이터로도 정확한 이미지 세그멘테이션 성능을 보여주어 주어진 데이터가 적은 저에게 적합하다고 판단했습니다.
 
 또한 차량의 스크래치와 비슷한 MRI 이미지 분석에도 사용 되는 것을 보고 Unet 모델을 선택했습니다.
 
